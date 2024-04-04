@@ -33,6 +33,10 @@ export const config: WebdriverIOConfig = {
     specs: [
         './test/**/*.feature'
     ],
+    suites: { ICC:        
+        [ './test/features/GeneraReserva.feature'
+ 
+    ]},
     // Patterns to exclude.
     exclude: [
         // 'path/to/excluded/files'
