@@ -6,3 +6,5 @@ Feature: Genera Reserva
         And  ingresa contraseña "4"
         And  cesar hace clic en iniciar sesion
         Then debe visualizar  mensaje "Bienvenido !"
+        And debe seleccionar el modulo de reservaciones
+        And ingresar a la pantalla principal para llenar los datos

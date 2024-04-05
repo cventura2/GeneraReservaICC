@@ -27,13 +27,35 @@ import { IccLogginPage } from "../../main/ui/IccLogginPage.ts";
         When('cesar hace clic en iniciar sesion',{timeout: 5 * 5000}, async () => {
             await actorInTheSpotlight().attemptsTo(
                 DatosLoggin.destino()
+
             )
 
                 });
     
         Then('debe visualizar  mensaje {string}',{timeout: 10* 5000}, async (bienvenido: string) =>{
             await actorInTheSpotlight().attemptsTo(
-                Switch.to(IccLogginPage.iframeIcc()),
-                Welcome.esBienvenido(bienvenido)
+                //Switch.to(IccLogginPage.iframeIcc()),
+               // Welcome.esBienvenido(bienvenido)
+               DatosLoggin.openMenureserva(),
+               DatosLoggin.despliegaOpcionesReserva(),
+               DatosLoggin.clicReservaICC(),
+               Switch.to(IccLogginPage.iframeIcc())
+               //DatosLoggin.iframeAfiliacion()
+               
+
             )
                 });
+
+        
+        /*Then('debe seleccionar el modulo de reservaciones',{timeout: 10* 5000}, async () => {
+                await actorInTheSpotlight().attemptsTo(//form[@action = "./default.aspx"
+                    Switch.to(IccLogginPage.salidaIframe()),
+                    Switch.to(IccLogginPage.switchReserva())
+                    
+                )
+                       });
+                    
+        Then('ingresar a la pantalla principal para llenar los datos', function () {
+                         // Write code here that turns the phrase above into concrete actions
+                         return 'pending';
+                       });*/
