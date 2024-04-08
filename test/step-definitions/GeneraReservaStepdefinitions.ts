@@ -2,7 +2,6 @@ import { Given, When, Then } from "@cucumber/cucumber";
 import { Actor, actorInTheSpotlight } from "@serenity-js/core";
 import { Navigate, Switch } from "@serenity-js/web";
 import { DatosLoggin } from "../../main/tasks/DatosLoggin.ts";
-import { Welcome } from "../../main/questions/welcome.ts";
 import { IccLogginPage } from "../../main/ui/IccLogginPage.ts";
 
 
