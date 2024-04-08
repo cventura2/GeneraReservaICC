@@ -33,7 +33,7 @@ export const config: WebdriverIOConfig = {
     specs: [
         './test/**/*.feature'
     ],
-    suites: { ICC:        
+    suites: { RS:        
         [ './test/features/GeneraReserva.feature'
  
     ]},

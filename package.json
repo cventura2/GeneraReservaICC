@@ -42,5 +42,16 @@
   "dependencies": {
     "serenity": "^1.1.6",
     "wdio": "^6.0.1"
+  },
+  "description": "Este repositorio es un template para iniciar un proyecto usando los frameworks SerenityJS, Cucumber, WebDriverIO con el patrón de diseño Screenplay. [create a new GitHub repository](https://help.github.com/en/articles/creating-a-repository-from-a-template), [clone it to your computer](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository).",
+  "version": "1.0.0",
+  "directories": {
+    "test": "test"
+  },
+  "author": "cventura",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "cventura"
   }
 }

@@ -4,7 +4,6 @@ Feature: Genera Reserva
         Given Cesar se encuentra en la web de intelligence call center
         When ingresa usuario "cventura" 
         And  ingresa contraseña "4"
-        And  cesar hace clic en iniciar sesion
-        Then debe visualizar  mensaje "Bienvenido !"
-        And debe seleccionar el modulo de reservaciones
-        And ingresar a la pantalla principal para llenar los datos
+        And da clic en campo loggin
+        Then se debe visualizar la pantalla principal para generar la reserva se visualiza el combo set member 
+        And ingresar membresia "4030394"
